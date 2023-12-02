@@ -1,0 +1,20 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools", "setuptools-scm"]
+
+[project]
+classifiers = ["Programming Language :: Python :: 3"]
+dependencies = []
+description = "aoc2023"
+name = "aoc2023"
+readme = "README.md"
+requires-python = ">=3.10"
+version = "0.0.1"
+
+[project.optional-dependencies]
+dev = ["mypy", "ruff"]
+
+
+[tool.ruff]
+line-length = 99
+extend-select = ["I", "N", "UP", "RUF", "B", "C4", "PTH", "SIM", "TID"]
